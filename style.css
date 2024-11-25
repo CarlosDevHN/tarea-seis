@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.layout-one {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "aside section1 section2"
+        "article article article"
+        "footer footer footer";
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-template-rows: auto auto auto auto;
+    gap: 10px;
+    padding: 20px;
+}
+
+.layout-one__header {
+    grid-area: header;
+    background: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #191818;
+}
+
+.layout-one__aside {
+    grid-area: aside;
+    background: white;
+    padding: 10px;
+    border: 1px solid #191818;
+}
+
+.layout-one__section1 {
+    grid-area: section1;
+    background: white;
+    padding: 10px;
+    border: 1px solid #191818;
+}
+
+.layout-one__section2 {
+    grid-area: section2;
+    background: white;
+    padding: 10px;
+    border: 1px solid #191818;
+}
+
+.layout-one__article {
+    grid-area: article;
+    background: white;
+    padding: 10px;
+    border: 1px solid #191818;
+}
+
+.layout-one__footer {
+    grid-area: footer;
+    background: white;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #191818;
+}
+
+.layout-two {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "navigation content sidebar"
+        "footer footer footer";
+    grid-template-columns: 1.5fr 2fr 1.5fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.layout-two__header {
+    grid-area: header;
+    background: #202653;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+.layout-two__navigation {
+    grid-area: navigation;
+    background: #202653;
+    color: white;
+    padding: 10px;
+}
+
+.layout-two__content {
+    grid-area: content;
+    background: #202653;
+    color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.layout-two__sidebar {
+    grid-area: sidebar;
+    background: #202653;
+    color: white;
+    padding: 10px;
+}
+
+.layout-two__footer {
+    grid-area: footer;
+    background: #202653;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.layout-three {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar1 content1 sidebar2"
+        "sidebar1 content2 sidebar2"
+        "footer footer footer";
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.layout-three__header {
+    grid-area: header;
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e42a2a;
+}
+
+.layout-three__sidebar1 {
+    grid-area: sidebar1;
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e42a2a;
+}
+
+.layout-three__content1 {
+    grid-area: content1;
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e42a2a;
+}
+
+.layout-three__content2 {
+    grid-area: content2;
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e42a2a;
+}
+
+.layout-three__sidebar2 {
+    grid-area: sidebar2;
+    background: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e42a2a;
+}
+
+.layout-three__footer {
+    grid-area: footer;
+    background: #f1f1f1;
+    padding: 10px;
+    border: 1px solid #e42a2a;
+    text-align: center;
+}
+
+.layout-four {
+    display: grid;
+    grid-template-areas:
+        "navigation header"
+        "navigation article"
+        "navigation ads"
+        "navigation footer";
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 10px;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.layout-four__header {
+    grid-area: header;
+    background: #6df352;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.layout-four__navigation {
+    grid-area: navigation;
+    background: #6df352;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.layout-four__article {
+    grid-area: article;
+    background: #6df352;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.layout-four__ads {
+    grid-area: ads;
+    background: #6df352;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.layout-four__footer {
+    grid-area: footer;
+    background: #6df352;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
